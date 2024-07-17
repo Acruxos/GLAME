@@ -38,3 +38,18 @@ Run `summarize_port` / `summarize_mquake` for test results on CounterFactPlus an
 
 The code we conduct our experiments is based on [`MEMIT`](https://github.com/kmeng01/memit.git).
 
+## Citation
+
+If you find this work helpful for your research, please kindly cite it.
+
+```text
+@misc{zhang2024knowledge,
+      title={Knowledge Graph Enhanced Large Language Model Editing}, 
+      author={Mengqi Zhang and Xiaotian Ye and Qiang Liu and Pengjie Ren and Shu Wu and Zhumin Chen},
+      year={2024},
+      eprint={2402.13593},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
+
