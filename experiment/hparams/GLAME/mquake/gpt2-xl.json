@@ -1,0 +1,41 @@
+{
+    "layers": [
+        9
+    ],
+    "fact_token": "subject_last",
+    "gnn_num_grad_steps": 50,
+    "gnn_loss_layer": 47,
+    "clamp_norm_factor": 4,
+    "gnn_lr": 5e-1,
+    "gnn_weight_decay": 5e-1,
+    "gnn_dim_factor": 1,
+    "gnn_attn_drop": 0.2,
+    "gnn_feat_drop": 0.3,
+    "kl_factor": 0.0750,
+    "mom2_adjustment": true,
+    "subgraph_size": 50,
+    "get_repr_layer": 5,
+    "gnn_fact_token_strategy": "composite_norm",
+    "compute_v_strategy": "old",
+    "early_stopping_loss": 5e-3,
+    "use_predefined_context": false,
+    "context_template_length_params": [
+        [
+            5,
+            15
+        ],
+        [
+            10,
+            15
+        ]
+    ],
+    "rewrite_module_tmp": "transformer.h.{}.mlp.c_proj",
+    "layer_module_tmp": "transformer.h.{}",
+    "mlp_module_tmp": "transformer.h.{}.mlp",
+    "attn_module_tmp": "transformer.h.{}.attn",
+    "ln_f_module": "transformer.ln_f",
+    "lm_head_module": "transformer.wte",
+    "mom2_dataset": "wikipedia",
+    "mom2_n_samples": 100000,
+    "mom2_dtype": "float32"
+}

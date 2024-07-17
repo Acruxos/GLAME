@@ -1,0 +1,30 @@
+{
+    "layers": [
+        12,
+        17,
+        30
+    ],
+    "num_steps": 35,
+    "lr": 5e-5,
+    "weight_decay": 0,
+    "kl_factor": 1,
+    "norm_constraint": 0.5,
+    "rewrite_module_tmp": "transformer.h.{}.mlp.c_proj",
+    "layer_module_tmp": "transformer.h.{}",
+    "mlp_module_tmp": "transformer.h.{}.mlp",
+    "attn_module_tmp": "transformer.h.{}.attn",
+    "ln_f_module": "transformer.ln_f",
+    "lm_head_module": "transformer.wte",
+    "context_template_length_params": [
+        [
+            5,
+            5
+        ],
+        [
+            10,
+            5
+        ]
+    ],
+    "top_k": 8,
+    "sentence_model_name": "/data1/yexiaotian/models/all-MiniLM-L6-v2"
+}
