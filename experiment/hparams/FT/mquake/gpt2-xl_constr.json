@@ -1,6 +1,6 @@
 {
     "layers": [
-        17
+        0
     ],
     "num_steps": 25,
     "lr": 5e-4,
@@ -12,15 +12,5 @@
     "mlp_module_tmp": "transformer.h.{}.mlp",
     "attn_module_tmp": "transformer.h.{}.attn",
     "ln_f_module": "transformer.ln_f",
-    "lm_head_module": "transformer.wte",
-    "context_template_length_params": [
-        [
-            5,
-            4
-        ],
-        [
-            10,
-            4
-        ]
-    ]
+    "lm_head_module": "transformer.wte"
 }
