@@ -17,7 +17,7 @@ pip install -r requirements.txt
 
 An example for editing GPT-J with GLAME on CounterFact dataset:
 ```shell
-python -m experiments.evaluate \
+python -m experiments.evaluate_cf \
     --alg_name=GLAME \
     --model_name=[path/to/your/gpt-j/model] \
     --hparams_fname=cf/gpt-j-6b.json \
@@ -29,10 +29,10 @@ Computing the covariance matrix estimation $C$ locally is time consuming, but it
 To summarize the results of CounterFact dataset, use [`experiments/summarize.py`](experiments/summarize.py):
 
 ```bash
-python -m experiments.summarize --dir_name=GLAME --runs=run_<run1>
+python -m experiments.summarize_cf --dir_name=GLAME --runs=run_<run1>
 ```
 
-Run `summarize_port` / `summarize_mquake` for test results on CounterFactPlus and MQuAKE.
+Run `evaluate_cf_plus` / `evaluate_mquake` for test results on CounterFactPlus and MQuAKE, and use corresponding `summarize_cf_plus` and `summarize_mquake` to summarize the results.
 
 ## Acknowledgement
 

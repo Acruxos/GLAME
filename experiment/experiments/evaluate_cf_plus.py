@@ -40,7 +40,7 @@ DS_DICT = {
     "mcf": (MultiCounterFactDataset, compute_rewrite_quality_counterfact),
     "cf": (CounterFactDataset, compute_rewrite_quality_counterfact),
     "zsre": (MENDQADataset, compute_rewrite_quality_zsre),
-    "cf-one-hop": (CFPlusDataset, compute_rewrite_quality_counterfact),
+    "cf-plus": (CFPlusDataset, compute_rewrite_quality_counterfact),
 }
 
 
@@ -145,7 +145,7 @@ def main(
     cache_template = None
     if use_cache:
         tmp_ds_name = ds_name
-        if ds_name == "cf-one-hop":
+        if ds_name == "cf-plus":
             tmp_ds_name = "cf"
         cache_template = (
             KV_DIR
@@ -304,7 +304,7 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--ds_name",
-        choices=["mcf", "cf", "zsre", "cf-one-hop"],
+        choices=["mcf", "cf", "zsre", "cf-plus"],
         default="mcf",
         help="Dataset to perform evaluations on. Either CounterFact (cf), MultiCounterFact (mcf), or zsRE (zsre).",
     )
