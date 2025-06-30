@@ -1,6 +1,6 @@
 # GLAME
 
-Knowledge Graph Enhanced Large Language Model Editing
+[EMNLP 2024] Knowledge Graph Enhanced Large Language Model Editing
 
 ## Requirements
 
@@ -43,13 +43,19 @@ The code we conduct our experiments is based on [`MEMIT`](https://github.com/kme
 If you find this work helpful for your research, please kindly cite it.
 
 ```text
-@misc{zhang2024knowledge,
-      title={Knowledge Graph Enhanced Large Language Model Editing}, 
-      author={Mengqi Zhang and Xiaotian Ye and Qiang Liu and Pengjie Ren and Shu Wu and Zhumin Chen},
-      year={2024},
-      eprint={2402.13593},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@inproceedings{zhang-etal-2024-knowledge-graph,
+    title = "Knowledge Graph Enhanced Large Language Model Editing",
+    author = "Zhang, Mengqi and Ye, Xiaotian and Liu, Qiang and Ren, Pengjie and Wu, Shu and Chen, Zhumin",
+    editor = "Al-Onaizan, Yaser and Bansal, Mohit and Chen, Yun-Nung",
+    booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    pages = "22647--22662",
+    url = "https://aclanthology.org/2024.emnlp-main.1261/",
+    doi = "10.18653/v1/2024.emnlp-main.1261"
 }
+
 ```
 
